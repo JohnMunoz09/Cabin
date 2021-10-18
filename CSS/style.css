@@ -1,4 +1,77 @@
 body{/*Selector*/
-    background-color: gray;/*Regla*/
-
+    background-color:white;/*Regla*/
 }
+
+h1{
+    text-align: center;/* Regla para centrar el texto*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 30px; 
+    color: white;
+    background-color: brown;
+}
+
+img{
+    height: 150px; /*Altura de la imagen*/
+    width: 9%; /*Ancho de la imagen*/
+    position:absolute ;
+    left: 480px;
+    top: 1px;
+    border: 3px solid; 
+    border-radius: 90px;
+}
+
+#contenedorOpciones{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    top: 90px;
+    left: 450px;
+}
+
+#text1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    position: relative;
+    left: 40px;
+}
+
+#opciones{
+    position: inherit;
+    left: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+#opciones li a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+}
+/*Cuando pasen el mouse sobre la lista*/
+#opciones li a:hover{
+    background-color: #434343;
+}
+
+#opciones > li{
+    float:left;
+}
+/*Desaparece el submenu*/
+#opciones li ul{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+
+/*Hacer aparecer l submenu de opciones*/
+#opciones li:hover >ul{
+    display: block;
+}
+
+
+
